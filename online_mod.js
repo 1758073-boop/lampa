@@ -1604,7 +1604,7 @@
         prox_enc += 'param/User-Agent=' + encodeURIComponent(user_agent) + '/';
       }
 
-      var cookie = 'PHPSESSID=ilm95bnssmb5lfa5q8jm4ppe1o;';
+      var cookie = Lampa.Storage.get('online_mod_rezka2_cookie', '') + '';
       if (cookie.indexOf('PHPSESSID=') == -1) cookie = 'PHPSESSID=' + Utils.randomId(26) + (cookie ? '; ' + cookie : '');
 
       if (cookie) {
